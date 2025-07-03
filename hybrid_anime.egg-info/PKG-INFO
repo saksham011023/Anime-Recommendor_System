@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: hybrid-anime
+Version: 0.1
+Author: Sam
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: requires-dist
