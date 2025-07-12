@@ -9,5 +9,6 @@ Requires-Dist: google-cloud-storage
 Requires-Dist: pyyaml
 Requires-Dist: tensorflow
 Requires-Dist: scikit-learn
+Requires-Dist: comet-ml
 Dynamic: author
 Dynamic: requires-dist
