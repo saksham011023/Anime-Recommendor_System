@@ -5,3 +5,4 @@ artifacts/raw
 artifacts/model
 artifacts/weights
 artifacts/model_checkpoint/
+artifacts/processed

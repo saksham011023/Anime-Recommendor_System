@@ -1,0 +1,6 @@
+outs:
+- md5: 6aff756e95838feb9f9eab042cd32784.dir
+  size: 11972066
+  nfiles: 2
+  hash: md5
+  path: weights
