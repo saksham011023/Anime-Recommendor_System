@@ -6,3 +6,4 @@ pyyaml
 tensorflow
 scikit-learn
 comet-ml
+dvc

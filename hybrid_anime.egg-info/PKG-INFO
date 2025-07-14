@@ -10,5 +10,6 @@ Requires-Dist: pyyaml
 Requires-Dist: tensorflow
 Requires-Dist: scikit-learn
 Requires-Dist: comet-ml
+Requires-Dist: dvc
 Dynamic: author
 Dynamic: requires-dist

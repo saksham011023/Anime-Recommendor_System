@@ -1,3 +1,7 @@
 anime/
 logs/
 *.pkl
+artifacts/raw
+artifacts/model
+artifacts/weights
+artifacts/model_checkpoint/
