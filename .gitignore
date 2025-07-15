@@ -6,3 +6,4 @@ artifacts/model
 artifacts/weights
 artifacts/model_checkpoint/
 artifacts/processed
+*.egg-info/

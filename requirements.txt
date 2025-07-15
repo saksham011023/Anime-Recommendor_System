@@ -8,3 +8,4 @@ scikit-learn
 comet-ml
 dvc
 dvc-gs #gs is google storage
+flask
