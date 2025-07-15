@@ -11,5 +11,6 @@ Requires-Dist: tensorflow
 Requires-Dist: scikit-learn
 Requires-Dist: comet-ml
 Requires-Dist: dvc
+Requires-Dist: dvc-gs
 Dynamic: author
 Dynamic: requires-dist
