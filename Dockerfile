@@ -7,7 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR /app
 
 # Install system dependencies required by TensorFlow
-RUN apt-get update && apt-get install -y python3.11-venv\
+RUN apt-get update && apt-get install -y python3.11-venv \
     build-essential \
     libatlas-base-dev \
     libhdf5-dev \
