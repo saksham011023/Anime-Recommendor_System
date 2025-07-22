@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        VENV_DIR = 'venv'
+        VENV_DIR = "venv"
     }
     stages{
         stage("Cloning from Github....."){
@@ -18,16 +18,7 @@ pipeline {
                 script{
                     echo 'Making a virtual environment...'
                     sh '''
-                    rm -rf ${VENV_DIR}
-                        
-                        # Try using venv first, fallback to virtualenv if needed
-                    if python -m venv ${VENV_DIR} 2>/dev/null; then
-                        echo "Using python venv"
-                    else
-                        echo "venv failed, trying virtualenv"
-                        python -m pip install --user virtualenv
-                        python -m virtualenv ${VENV_DIR}
-                    fi
+                    python -m venv ${VENV_DIR}
                     . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
                     pip install -e .
