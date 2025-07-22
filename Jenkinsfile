@@ -18,7 +18,16 @@ pipeline {
                 script{
                     echo 'Making a virtual environment...'
                     sh '''
-                    python -m venv ${VENV_DIR}
+                    rm -rf ${VENV_DIR}
+                        
+                        # Try using venv first, fallback to virtualenv if needed
+                    if python -m venv ${VENV_DIR} 2>/dev/null; then
+                        echo "Using python venv"
+                    else
+                        echo "venv failed, trying virtualenv"
+                        python -m pip install --user virtualenv
+                        python -m virtualenv ${VENV_DIR}
+                    fi
                     . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
                     pip install -e .
