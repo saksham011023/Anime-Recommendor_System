@@ -1,13 +1,13 @@
-FROM python:3.11-slim
+FROM python:3.8-slim
 
 # Set environment variables to prevent Python from writing .pyc files & Ensure Python output is not buffered
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
-WORKDIR /app
+
 
 # Install system dependencies required by TensorFlow
-RUN apt-get update && apt-get install -y python3-venv python3-pip && apt-get clean \
+RUN apt-get update && apt-get install -y \
     build-essential \
     libatlas-base-dev \
     libhdf5-dev \
@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y python3-venv python3-pip && apt-get cle
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory
-
+WORKDIR /app
 
 # Copy the application code
 COPY . .
