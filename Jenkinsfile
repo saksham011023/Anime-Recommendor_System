@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        VENV_DIR = "venv"
+        VENV_DIR = "anime"
     }
     stages{
         stage("Cloning from Github....."){
